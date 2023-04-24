@@ -67,6 +67,9 @@ function setupGrid(n) {
                 newDiv.addEventListener('mouseenter', randomColour);
                 newDiv.addEventListener('mouseleave', returnColour);
             }
+            if (increaseToggle) {
+                newDiv.addEventListener('mouseover', increaseDarkness);
+            }
             container.appendChild(newDiv);
         }
     }
